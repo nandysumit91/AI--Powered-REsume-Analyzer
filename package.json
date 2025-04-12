@@ -1,0 +1,12 @@
+{
+  "name": "resume-analyzer",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd resume-analyzer-backend && node server.js",
+    "client": "cd resume-analyzer-frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
